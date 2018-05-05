@@ -12,12 +12,16 @@
 ##### Gastner, Michael T. and Newman, M. E. J. (2004) Diffusion-based method for producing density equalizing maps Proc. Natl. Acad. Sci. USA 101, 7499-7504.
 ##### Olson, J. M. (1976), Noncontiguous Area Cartograms. The Professional Geographer, 28: 371–380. doi:10.1111/j.0033-0124.1976.00371.x
 
+_____________________________________________________________
 
-# Fazendo Funções no R (Making Functions in R)
-quadrado<-function(x){x^2}
-quadrado(5)
+# Fazendo Funções no R (Making Functions in R)  
+
+quadrado<-function(x){x^2}  
+
+quadrado(5)  
 quadrado(15)
 
-inversa<-function(x){1/x}
-num<-c(1,2,3,4,5)
+inversa<-function(x){1/x}  
+
+num<-c(1,2,3,4,5)   
 inversa(num)
