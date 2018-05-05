@@ -1,0 +1,31 @@
+Escopo: Estados e Municípios;;;;;;;;
+Fonte: Anexo 02 - Demonstrativo da Dívida Consolidada Líquida do Relatório de Gestão Fiscal (Siconfi/Finbra);;;;;;;;
+Apuração: 12 Meses Anterioes - Até o Período de Referência;;;;;;;;
+UF;Tipo de Ente;Ente;Cod IBGE;DCL;RCL;% DCL/RCL;Período de Ref;Limite DCL/RCL
+AC;Estado;Acre;12;3212204820,00;4471916240,00;71,83;3º Quad/2017;Cumpre
+AL;Estado;Alagoas;27;7000340864,00;7348618775,00;95,26;3º Quad/2017;Cumpre
+AM;Estado;Amazonas;13;3798423697,00;12052493122,00;31,52;3º Quad/2017;Cumpre
+AP;Estado;Amapá;16;323884837,30;4353647885,00;7,44;3º Quad/2017;Cumpre
+BA;Estado;Bahia;29;17229303589,00;29952763445,00;57,52;3º Quad/2017;Cumpre
+CE;Estado;Ceará;23;8146584124,00;17779472004,00;45,82;3º Quad/2017;Cumpre
+DF;Estado;Distrito Federal;53;6998667548,00;20719829099,00;33,78;3º Quad/2017;Cumpre
+ES;Estado;Espírito Santo;32;2111250831,00;12193441016,00;17,31;3º Quad/2017;Cumpre
+GO;Estado;Goiás;52;19357283260,00;21033876163,00;92,03;3º Quad/2017;Cumpre
+MA;Estado;Maranhão;21;6419281520,00;12505341352,00;51,33;3º Quad/2017;Cumpre
+MG;Estado;Minas Gerais;31;102815000000,00;55173574560,00;186,35;3º Quad/2017;Cumpre
+MS;Estado;Mato Grosso do Sul;50;7387150840,00;9747257946,00;75,79;3º Quad/2017;Cumpre
+MT;Estado;Mato Grosso;51;4052614138,00;13370957833,00;30,31;3º Quad/2017;Cumpre
+PA;Estado;Pará;15;1153286258,00;18017134314,00;6,40;3º Quad/2017;Cumpre
+PB;Estado;Paraíba;25;2641293135,00;9130510758,00;28,93;3º Quad/2017;Cumpre
+PE;Estado;Pernambuco;26;13114848128,00;21512144300,00;60,96;3º Quad/2017;Cumpre
+PI;Estado;Piauí;22;3288148477,00;8005700616,00;41,07;3º Quad/2017;Cumpre
+PR;Estado;Paraná;41;10742977164,00;36615275854,00;29,34;3º Quad/2017;Cumpre
+RJ;Estado;Rio de Janeiro;33;135393000000,00;50194044675,00;269,74;3º Quad/2017;Descumpre
+RN;Estado;Rio Grande do Norte;24;1204549997,00;9111716219,00;13,22;3º Quad/2017;Cumpre
+RO;Estado;Rondônia;11;3151591054,00;6500433453,00;48,48;3º Quad/2017;Cumpre
+RR;Estado;Roraima;14;1326583191,00;3197049908,00;41,49;3º Quad/2017;Cumpre
+RS;Estado;Rio Grande do Sul;43;76703155010,00;35045932697,00;218,86;3º Quad/2017;Descumpre
+SC;Estado;Santa Catarina;42;10797795560,00;21131271286,00;51,11;3º Quad/2017;Cumpre
+SE;Estado;Sergipe;28;3992519479,00;6885059830,00;57,99;3º Quad/2017;Cumpre
+SP;Estado;São Paulo;35;259055000000,00;151562000000,00;170,92;3º Quad/2017;Cumpre
+TO;Estado;Tocantins;17;2735798547,00;7198140237,00;38,01;3º Quad/2017;Cumpre

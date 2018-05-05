@@ -1,0 +1,54 @@
+---
+title: "Untitled"
+author: "Steven"
+date: "12 de março de 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r echo=FALSE}
+##-------------------------------------------------------------------------------------##
+##    Anamorfismo para SER                                                             ##
+##    http://www.tesouro.fazenda.gov.br/pt_PT/indicadores-fiscais-e-de-endividamento   ##
+##                                                                                     ##
+##    Steven Dutt-Ross                                                                 ##
+##    UNIRIO                                                                           ##
+##-------------------------------------------------------------------------------------##
+
+# store the current directory
+initial.dir<-getwd()
+# change to the new directory
+setwd("C:/Users/Hp/Documents/DIRETORIO DE TRABALHO DO R/indicadores-e-operacoes-de-credito-2018-01/")
+
+library(readr)
+divida <- read_delim("estados-DCL-e-RCL.csv", 
+                     ";", escape_double = FALSE, locale = locale(encoding = "latin1"), 
+                     trim_ws = TRUE, skip = 3)
+nomes<-c("UF","Tipo","Ente","Cod_IBGE","DCL","RCL","Perc_DCL_RCL","Periodo","Limite_DCL_RCL")
+colnames(divida)<-nomes
+divida <- within(divida, {  Perc_DCL_RCL <- Perc_DCL_RCL/100})
+library(sf)
+library(brazilmaps)
+Mapa_brasil <- get_brmap(geo = "State",
+                         geo.filter = NULL,
+                         class = "SpatialPolygonsDataFrame")
+divida$State<-divida$Cod_IBGE
+invisible(Mapa_basededados <- merge(Mapa_brasil, divida, by.x = "State", by.y = "State", all = TRUE))
+
+library(tmap)
+library(cartogram)
+library(maptools)
+dividapublica <- cartogram(Mapa_basededados, "Perc_DCL_RCL", itermax=30)
+tm1<-tm_shape(Mapa_basededados) + tm_borders() + 
+  tm_shape(dividapublica) + tm_fill("Perc_DCL_RCL", style="jenks") +
+  tm_borders() + tm_layout(frame=F)+
+  tm_text("UF", size="Perc_DCL_RCL", scale=1, root=4, size.lowerbound = .6, 
+          bg.color="white", bg.alpha = .75, 
+          auto.placement = 1, legend.size.show = FALSE) 
+tmap_mode("view")
+tm1
+```
